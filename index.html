@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
-</head>
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/logo.png" />
+    </header>
+    <form>
+      <!-- Gender -->
+      <p>You are a...</p>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label><br/>
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label>
 
-<body>
+      <!-- Interests -->
+      <p>Who is interested in...</p>
+      <input type="checkbox" id="web" />
+      <label for="web">Web development</label><br/>
+      <input type="checkbox" id="photoshop" />
+      <label for="photoshop">Photoshop</label><br/>
+      <input type="checkbox" id="madona" />
+      <label for="madona">Singing Madona Songs</label>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
-</body>
+      <!-- Contact details -->
+      <fieldset>
+        <legend>Contact Info</legend>
+        <input type="email" placeholder="Email" required />
+        <span class="tick"></span>
+        <input type="telephone" placeholder="Phone number" required />
+        <span class="tick"></span>
+      </fieldset>
+      <!-- Preferred -->
+      <p>How would you like to be contacted?</p>
+      <select>
+        <option>By email</option>
+        <option>By telephone</option>
+      </select>
+      <input type="submit" value="Become a Ninja" />
+    </form>
+  </body>
 </html>
